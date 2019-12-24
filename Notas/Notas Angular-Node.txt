@@ -1,0 +1,125 @@
+-----------------------NECESITO QUE TENGAN INSTALADO---------------------
+NodeJS
+Angular + cli
+Postman
+Visual Studio Code
+(Pa la base de datos en docker, docker xd) https://github.com/wnameless/docker-oracle-xe-11g
+SQL Developer/DataGrip/Extension de Oracle para VSCODE
+
+------------------------NODE JS-------------------------------------------
+
+https://blog.risingstack.com/building-a-node-js-app-with-typescript-tutorial/
+
+npm init
+npm install -g typescript
+npm install express --save
+npm install @types/express
+npm install morgan
+npm install cors
+npm install @type/cors
+npm install @type/morgan
+
+npm install nodemon
+
+
+crear index.ts en Servidor
+crear tsconfig.json en Servidor
+Modificar package.json
+cd Servidor
+sudo npm run build
+sudo npm run dev
+
+crear Carpeta Controladores
+crear carpeta Rutas
+
+**CONEXION DB
+npm install oracledb
+npm install path
+npm install stream
+
+npm install @types/oracledb
+"@types/oracledb": "^1.11.34"
+
+https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html
+COPIAR ARCHIVOS DESCOMPRIMIDOS A CARPETAS CORRESPONDIENTES
+
+sudo nano ~/.bashrc
+export ORACLE_HOME=/usr/lib/oracle/18.5/client64
+export PATH=$PATH:$ORACLE_HOME/bin
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+
+database.ts
+ip.ts
+
+crear rutes.ts
+crear controlador.ts
+
+meter rutas a index.ts
+
+-----------------------ANGULAR------------------------
+
+Crear el proyecto de Angular
+    ng new NombreProyecto
+
+Crear carpetas en SRC - APP
+    COMPONENTS
+        Modulos, "paginas web"
+    SERVICES
+        Conexion con la BD
+    MODELS
+        Objetos que representan entidades de la db, objetos, etc
+
+COMPONENT - SERVICE - DB (MODELS)
+
+CREAR UN MODELO
+    nuevo archivo.ts 
+        export class NOMBRE { id:tipo; var1:tipo; ... }
+
+CREAR UN SERVICIO
+    cd src/app/services
+    ng generate service nombre / ng g s nombre
+    agregar a proveedores de app.module (Global scope)
+
+CREAR UN COMPONENTE
+    cd src/app/components
+    ng g c nombre --module app
+
+ESTRUCTURA COMPONENTE
+    HTML
+    TS
+    CSS
+    SPEC.TS (?)
+
+RUTAS
+    app component engloba todo (index.html, app-root, router-outlet)
+    app-routing.module.ts
+    Routes[{path:'/...',component:componente}] 
+
+    
+
+PAGINAS/COMPONENTES
+    https://medium.com/codingthesmartway-com-blog/using-bootstrap-with-angular-c83c3cee3f4a
+    https://bootswatch.com/
+    templates/temas
+
+    https://material.angular.io/
+
+ENLAZAR PAGINA (HTML) A PROGRA (TS)
+**** VERIFICAR TENER EN APP.MODULE.TS
+    import { FormsModule } from '@angular/forms';
+    y en Imports del NgModule tambien
+***********
+VALORES []
+[(ngModel)] = "variable/objeto/etc" 
+name = lo mismo
+
+FUNCIONES/METODOS
+(funcion) = "nombreFuncion()"
+
+PARA HACER UNA PETICIO HTTP
+añadir import { HttpClientModule } from '@angular/common/http';  a app.module.ts
+añadir a NgImport HttpClientModule
+
+
+
+

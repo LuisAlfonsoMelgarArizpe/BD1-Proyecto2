@@ -1,0 +1,22 @@
+<div>
+
+  <mat-card style="width: 75%; margin-left: auto; margin-right: auto;">
+    <mat-card-header>
+      <mat-card-title>Iniciar Sesion</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form>
+        <mat-form-field style="width : 100%">
+          <input matInput name="val1" [(ngModel)]="alf.val1" type="text" placeholder="Val1">
+        </mat-form-field>
+
+        <mat-form-field style="width : 100%">
+          <input matInput name="val2" [(ngModel)]="alf.val2" type="text" placeholder="Val2">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions align="center">
+      <button mat-raised-button (click)="login()" >Aceptar</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,11 @@
+CREATE TABLE ALFONSO(
+    id int,
+    val1 varchar(25),
+    val2 varchar(25)
+)
+
+INSERT INTO ALFONSO VALUES(1,'HOLA','MUNDO');
+INSERT INTO ALFONSO VALUES(2,'ADIOS','MUNDO');
+
+SELECT * FROM ALFONSO;
+
