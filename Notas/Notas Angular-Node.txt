@@ -1,10 +1,13 @@
 -----------------------NECESITO QUE TENGAN INSTALADO---------------------
 NodeJS
-Angular + cli
+Angular + cli (npm install -g @angular/cli)
 Postman
 Visual Studio Code
-(Pa la base de datos en docker, docker xd) https://github.com/wnameless/docker-oracle-xe-11g
-SQL Developer/DataGrip/Extension de Oracle para VSCODE
+SQL Developer 
+PARA USAR ORACLE 11G EN DOCKER
+    Instalar DOCKER
+    Traer descargado este repositorio de GitHub https://github.com/wnameless/docker-oracle-xe-11g
+
 
 ------------------------NODE JS-------------------------------------------
 
@@ -56,7 +59,11 @@ crear controlador.ts
 
 meter rutas a index.ts
 
+
+PROBAR DESDE POSTMAN
 -----------------------ANGULAR------------------------
+
+npm install -g @angular/cli
 
 Crear el proyecto de Angular
     ng new NombreProyecto
@@ -121,5 +128,11 @@ añadir import { HttpClientModule } from '@angular/common/http';  a app.module.t
 añadir a NgImport HttpClientModule
 
 
+
+
+------COMANDOS--------
+sudo npm run dev -> Corre el servicio de nodemon (inicia el servidor en el puerto 3000)
+sudo npm run build -> Corre el servicio de TypeScripWatch (Compilar los .TS a .JS de forma automatica)
+sudo ng serve/ npm run ng serve -> Inicia el Cliente de Anular en el puerto 4200
 
 
