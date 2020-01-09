@@ -8,13 +8,18 @@ import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
+import { MenuComponent } from './components/menu/menu.component';
+import { ReportesComponent } from './components/reportes/reportes.component';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    MenuComponent,
+    ReportesComponent
   ],
   imports: [
     MaterialModule,

@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7ECB3B5A-0404-AF4E-0640-9DD36335CF13" name="PAIS">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:15:49 UTC</createdTime>
+<generatorID>E080180F-3BC9-2B4B-0824-A4EFF5A0CCD9</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="FB2AB041-E7C6-AA3E-1ABE-320887F5C106">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:15:49 UTC</createdTime>
+<generatorID>9C390DC4-F421-5EB2-CB87-C5EBC8187391</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="AFBF955A-EFDD-AF1D-0A48-BDCF9FD3587A">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:15:49 UTC</createdTime>
+<generatorID>A55CDC7E-A551-A5A0-7738-9F285A7A5BA6</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAPITAL" id="B955B9A7-8EB5-7798-885E-CCFCEAD73C08">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:15:49 UTC</createdTime>
+<generatorID>BC28BD80-F0D2-D56B-2B02-2EA48F8A1F46</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POBLACION" id="F55D9615-A114-6E5F-3D44-26FC1D3F90A3">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:15:49 UTC</createdTime>
+<generatorID>48C709C6-CF12-3AD0-D2AF-4A6B154CA255</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AREA" id="4588309D-E8AF-3C81-EB0D-8F90BAF9D74A">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:15:49 UTC</createdTime>
+<generatorID>ECCD7F51-9096-BF7B-C53A-A5D306862500</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_ID" id="EFA8BB94-0C53-7706-2267-04AD81532E2E">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:15:49 UTC</createdTime>
+<generatorID>5B517C14-E523-2080-4FCA-A26B90C3B8E7</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A04B16D-00C0-38E1-39E4-638C37E9F209" referredColumn="00A078F2-456D-E376-511A-382F0CB79449"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F84A70FD-FD41-C932-3042-B0F2A3053189" name="PAIS_PK">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:15:49 UTC</createdTime>
+<generatorID>78050739-CBA9-906B-7F06-6B09AFAB1AA0</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB2AB041-E7C6-AA3E-1ABE-320887F5C106"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2847E00-FD02-12FE-BE5E-8C2FC74A624C" name="PAIS_REGION_FK">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:15:49 UTC</createdTime>
+<generatorID>CB93AD56-2778-3355-9052-8423C83BEEB7</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFA8BB94-0C53-7706-2267-04AD81532E2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

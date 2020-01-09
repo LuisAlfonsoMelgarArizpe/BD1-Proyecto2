@@ -1,0 +1,24 @@
+.invento-card{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .invento-header-image {
+    background-image: url('https://img3.bgxcdn.com/thumb/large/oaupload/banggood/images/86/83/e7b7b22e-2753-4721-be45-740de74989ab.jpg');
+    background-size: cover;
+  }
+
+  .inventor-header-image {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png');
+    background-size: cover;
+  }
+
+  .prof-header-image {
+    background-image: url('http://icons.iconarchive.com/icons/paomedia/small-n-flat/512/user-male-icon.png');
+    background-size: cover;
+  }
+
+  .pais-header-image {
+    background-image: url('https://image.shutterstock.com/image-vector/earth-globes-isolated-on-white-260nw-408406297.jpg');
+    background-size: cover;
+  }

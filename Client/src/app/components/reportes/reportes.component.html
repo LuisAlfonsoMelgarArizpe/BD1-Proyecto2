@@ -1,0 +1,246 @@
+<div *ngIf="getReporte() == '1'">
+  <mat-toolbar>
+    <span>Reporte 1. </span>
+  </mat-toolbar>
+  Desplegar los países de cada continente y el número de preguntas que han contestado de cualquier encuesta. Si hay países que no han contestado ninguna encuesta, igual debe aparecer su nombre en la lista
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Pais </th>
+      <th scope="col"> Region </th>
+      <th scope="col"> Cantidad de Preguntas Contestadas </th>
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.NOMBRE}}</td>
+      <td>{{dato.NOMBRE_REGION}}</td>
+      <td>{{dato.CANTIDAD}}</td>
+    </tr>
+  </table>
+
+</div>
+
+<div *ngIf="getReporte() == '2'">
+  <mat-toolbar>
+    <span>Reporte 2. </span>
+  </mat-toolbar>
+  Desplegar el nombre de cada jefe seguido de todos sus subalternos, para todos los profesionales ordenados por el jefe alfabéticamente.
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Profesional </th>
+      <th scope="col"> Area </th>
+      <th scope="col"> Rol </th>
+      
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.PROF}}</td>
+      <td>{{dato.AREA}}</td>
+      <td>{{dato.ROL}}</td>
+    </tr>
+  </table>
+</div>
+
+<div *ngIf="getReporte() == '3'">
+  <mat-toolbar>
+    <span>Reporte 3. </span>
+  </mat-toolbar>
+  Desplegar todos los profesionales, y su salario cuyo salario es mayor al promedio del salario de los profesionales en su misma área
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Profesional </th>
+      <th scope="col"> Salario </th>
+      <th scope="col"> Area </th>
+      <th scope="col"> Promedio </th>
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.PROF}}</td>
+      <td>{{dato.SALARIO}}</td>
+      <td>{{dato.AREA}}</td>
+      <td>{{dato.PROMEDIO}}</td>
+    </tr>
+  </table>
+</div>
+
+<div *ngIf="getReporte() == '4'">
+  <mat-toolbar>
+    <span>Reporte 4. </span>
+  </mat-toolbar>
+  Desplegar los nombres de los países que han contestado encuestas, ordenados del país que más aciertos ha tenido hasta el que menos aciertos ha tenido
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Pais </th>
+      <th scope="col"> Cantidad </th>
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.NOMBRE}}</td>
+      <td>{{dato.CANTIDAD}}</td>
+    </tr>
+  </table>
+</div>
+
+<div *ngIf="getReporte() == '5'">
+  <mat-toolbar>
+    <span>Reporte 5. </span>
+  </mat-toolbar>
+  Desplegar el nombre del país y el área de todos los países que tienen más de siete   fronteras ordenarlos por el de mayor área
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Pais </th>
+      <th scope="col"> Area </th>
+      <th scope="col"> Cantidad </th>
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.NOMBRE}}</td>
+      <td>{{dato.AREA}}</td>
+      <td>{{dato.Cantidad}}</td>
+    </tr>
+  </table>
+</div>
+
+<div *ngIf="getReporte() == '6'">
+  <mat-toolbar>
+    <span>Reporte 6. </span>
+  </mat-toolbar>
+  Desplegar el nombre del profesional, su salario, su comisión y el total de salario (sueldo más comisión) de todos los profesionales con comisión mayor que el 25% de su
+salario.
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Nombre </th>
+      <th scope="col"> Salario </th>
+      <th scope="col"> Comision </th>
+      <th scope="col"> Total </th>
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.NOMBRE}}</td>
+      <td>{{dato.SALARIO}}</td>
+      <td>{{dato.COMISION}}</td>
+      <td>{{dato.TOTAL}}</td>
+    </tr>
+  </table>
+</div>
+
+<div *ngIf="getReporte() == '7'">
+  <mat-toolbar>
+    <span>Reporte 7. </span>
+  </mat-toolbar>
+  Desplegar los países cuya población sea mayor a la población de los países centroamericanos juntos
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Pais </th>
+      <th scope="col"> Poblacion </th>
+      
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.NOMBRE}}</td>
+      <td>{{dato.POBLACION}}</td>
+      
+    </tr>
+  </table>
+</div>
+
+<div *ngIf="getReporte() == '8'">
+  <mat-toolbar>
+    <span>Reporte 8. </span>
+  </mat-toolbar>
+  Desplegar todos los jefes de cada profesional que no estén en el mismo departamento que el del profesional que atiende al inventor Pasteur.
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Nombre </th>
+      
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.NOMBRE}}</td>
+      
+    </tr>
+  </table>
+</div>
+
+<div *ngIf="getReporte() == '9'">
+  <mat-toolbar>
+    <span>Reporte 9. </span>
+  </mat-toolbar>
+  Desplegar el nombre de todos los inventos inventados el mismo año que BENZ inventó algún invento
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Nombre </th>
+      <th scope="col"> Año </th>
+      
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.NOMBRE}}</td>
+      <td>{{dato.ANO}}</td>
+      
+    </tr>
+  </table>
+</div>
+
+<div *ngIf="getReporte() == '10'">
+  <mat-toolbar>
+    <span>Reporte 10. </span>
+  </mat-toolbar>
+  Desplegar los nombres y el número de habitantes de todas las islas que tiene un área mayor o igual al área de Japón.
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Nombre </th>
+      <th scope="col"> Poblacion </th>
+      
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.NOMBRE}}</td>
+      <td>{{dato.POBLACION}}</td>
+      
+    </tr>
+  </table>
+</div>
+
+<div *ngIf="getReporte() == '11'">
+  <mat-toolbar>
+    <span>Reporte 11. </span>
+  </mat-toolbar>
+  Desplegar todos los países con el nombre de cada país con el cual tiene una frontera
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Pais  </th>
+      <th scope="col"> Frontera Con </th>
+      <th scope="col"> Cardinal </th>
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.P1}}</td>
+      <td>{{dato.P2}}</td>
+      <td>{{dato.CARDINAL}}</td>
+      
+    </tr>
+  </table>
+</div>
+
+<div *ngIf="getReporte() == '12'">
+  <mat-toolbar>
+    <span>Reporte 12. </span>
+  </mat-toolbar>
+  Desplegar el nombre del profesional su salario y su comisión de los empleados cuyo salario es mayor que el doble de su comisión
+
+  <table style="overflow-x:auto; text-align: center;">
+    <tr>
+      <th scope="col"> Nombre </th>
+      <th scope="col"> Salario </th>
+      <th scope="col"> Doble Comision </th>
+      
+    </tr>
+    <tr *ngFor="let dato of datos">
+      <td>{{dato.NOMBRE}}</td>
+      <td>{{dato.SALARIO}}</td>
+      <td>{{dato.Doble}}</td>
+      
+    </tr>
+  </table>
+</div>
+

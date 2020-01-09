@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Alfonso } from 'src/app/models/alfonso';
 import { LoginService } from 'src/app/services/login.service';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -9,18 +10,22 @@ import { LoginService } from 'src/app/services/login.service';
 })
 export class LoginComponent implements OnInit {
 
-  alf = new Alfonso();
+  alf = {
+    user:'',
+    pass:''
+  }
 
-  constructor(private loginS:LoginService){}
+  constructor(private loginS:LoginService, private router: Router){}
   
   ngOnInit() {
   }
 
   login(){
-    this.loginS.login(this.alf).subscribe((res)=>{
+    this.loginS.login(this.alf).subscribe((res:any)=>{
       console.log('Respuesta Node',res);
-      if(res[0] != undefined){
-        alert('BIENVENIDO USUARIO # ' + res[0].ID);
+      if(res.text == 'OK'){
+        alert('BIENVENIDO');
+        this.router.navigate(["/menu"]);
       }else{
         alert('USUARIO / CONTRASEÑA INCORRECTA');
       }

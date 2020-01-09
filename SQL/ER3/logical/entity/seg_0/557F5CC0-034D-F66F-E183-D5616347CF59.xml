@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="557F5CC0-034D-F66F-E183-D5616347CF59" name="INVENTO">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:56:02 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="EBBD17B2-B174-6A8D-A0F1-C299FA6C9213">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:56:57 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="B5E4238C-4AC8-F2F0-43C0-19DFD58905ED">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:57:06 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AÑO" id="38283FB2-0622-5E78-B984-11E61D262218">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:57:24 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="DA50FFFC-B784-5331-2ED6-F1775ABEB723">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:58:01 UTC</createdTime>
+<generatorID>0BFFE0A7-3299-6E59-0F57-9E9D16703BB2</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<referedAttribute>9C390DC4-F421-5EB2-CB87-C5EBC8187391</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID2" id="4F36220D-DC92-ECC3-313F-8299A96AF419">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:58:06 UTC</createdTime>
+<generatorID>3AFC1BB0-1121-78C5-B437-C4344499CE64</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<referedAttribute>1FA26DEB-29AB-89A1-25CC-178BFFF99DB9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D836C4DD-A197-DE7A-4EF1-E8DC7BD38D9F" name="INVENTO PK">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:57:05 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EBBD17B2-B174-6A8D-A0F1-C299FA6C9213</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

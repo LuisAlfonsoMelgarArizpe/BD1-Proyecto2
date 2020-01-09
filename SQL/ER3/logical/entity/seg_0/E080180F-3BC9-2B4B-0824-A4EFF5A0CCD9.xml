@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E080180F-3BC9-2B4B-0824-A4EFF5A0CCD9" name="PAIS">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:46:53 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="9C390DC4-F421-5EB2-CB87-C5EBC8187391">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:47:03 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="A55CDC7E-A551-A5A0-7738-9F285A7A5BA6">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:47:16 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAPITAL" id="BC28BD80-F0D2-D56B-2B02-2EA48F8A1F46">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:50:05 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POBLACION" id="48C709C6-CF12-3AD0-D2AF-4A6B154CA255">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:50:20 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AREA" id="ECCD7F51-9096-BF7B-C53A-A5D306862500">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:50:34 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="5B517C14-E523-2080-4FCA-A26B90C3B8E7">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:51:16 UTC</createdTime>
+<generatorID>CB93AD56-2778-3355-9052-8423C83BEEB7</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<referedAttribute>B461ADC0-D444-AEBE-A56C-6EE22A5C9160</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="78050739-CBA9-906B-7F06-6B09AFAB1AA0" name="PAIS PK">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:47:15 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C390DC4-F421-5EB2-CB87-C5EBC8187391</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

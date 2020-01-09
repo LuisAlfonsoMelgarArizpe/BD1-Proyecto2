@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9D7F887D-DA79-DDB9-EA4B-77A06A5189F1" containerWithKeyObject="0F530D30-F92C-3948-26E3-5FA76B3DF3D8" localFKIndex="CC031CE8-5320-21EE-254F-27BC83CEEA82" name="FRONTERA_CARDINAL_FK">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:23:44 UTC</createdTime>
+<generatorID>31FFA838-537D-6773-EDB0-AB819CCF8674</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<referredTableLongName>CARDINAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>185235FE-FEF4-6FE1-56CC-54339E6172E0</referredTableID>
+<keyObject>4F1683FC-9B98-C980-2FD3-579D1F13FBC9</keyObject>
+<referredKeyID>4F1683FC-9B98-C980-2FD3-579D1F13FBC9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

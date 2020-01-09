@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="87DE4215-2CAA-294C-D828-8FE9AD011CE2" name="INVENTOR">
+<createdBy>Alfonso</createdBy>
+<createdTime>2019-12-27 14:16:41 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_INVENTOR" id="E6AC756D-DF2A-639C-7334-7AB05C61501F">
+<createdBy>Alfonso</createdBy>
+<createdTime>2019-12-27 14:16:47 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="A0E427C9-77E5-6614-0291-4320E5F6295C">
+<createdBy>Alfonso</createdBy>
+<createdTime>2019-12-27 14:17:00 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_INVENTO" id="B01BD301-BD5C-314A-3063-3BC8D6AC28C9">
+<createdBy>Alfonso</createdBy>
+<createdTime>2019-12-27 14:17:18 UTC</createdTime>
+<generatorID>C2AAB357-C388-18B2-5A26-675FBC8D24BB</generatorID>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<referedAttribute>9099DE5E-0303-074A-1DCE-2595F2A5BAB5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="812AF769-36FC-7A51-EC3F-1C7AD64F6198" name="INVENTOR PK">
+<createdBy>Alfonso</createdBy>
+<createdTime>2019-12-27 14:16:59 UTC</createdTime>
+<ownerDesignName>ER2</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E6AC756D-DF2A-639C-7334-7AB05C61501F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

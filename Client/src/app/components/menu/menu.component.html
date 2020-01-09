@@ -1,0 +1,265 @@
+<mat-toolbar>
+  <span>PROYECTO 2</span>
+</mat-toolbar>
+
+<button mat-button [matMenuTriggerFor]="menu1">Reportes</button>
+<mat-menu #menu1="matMenu">
+  <button mat-menu-item (click)="reporte1()">Reporte 1</button>
+  <button mat-menu-item (click)="reporte2()">Reporte 2</button>
+  <button mat-menu-item (click)="reporte3()">Reporte 3</button>
+  <button mat-menu-item (click)="reporte4()">Reporte 4</button>
+  <button mat-menu-item (click)="reporte5()">Reporte 5</button>
+  <button mat-menu-item (click)="reporte6()">Reporte 6</button>
+  <button mat-menu-item (click)="reporte7()">Reporte 7</button>
+  <button mat-menu-item (click)="reporte8()">Reporte 8</button>
+  <button mat-menu-item (click)="reporte9()">Reporte 9</button>
+  <button mat-menu-item (click)="reporte10()">Reporte 10</button>
+  <button mat-menu-item (click)="reporte11()">Reporte 11</button>
+  <button mat-menu-item (click)="reporte12()">Reporte 12</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="menu2">Inventos</button>
+<mat-menu #menu2="matMenu">
+  <button mat-menu-item (click)="showInventos()">Inventos</button>
+  <button mat-menu-item (click)="showInventores()">Inventores</button>
+  <button mat-menu-item (click)="showProfesionales()">Profesionales</button>
+  
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="menu3">Paises</button>
+<mat-menu #menu3="matMenu">
+  <button mat-menu-item (click)="showPaises()">Paises</button>
+  <button mat-menu-item (click)="showRegiones()">Regiones</button>
+  
+  
+</mat-menu>
+
+<br>
+<div *ngIf="menu == 0">
+  <mat-card>Proyecto 2</mat-card>
+</div>
+
+<div *ngIf="menu == 1">
+
+  <button mat-button mat-button color="primary" (click)="nuevoInvento()">Nuevo Invento</button>
+
+  <mat-grid-list cols="3" rowHeight="200px">
+    <mat-grid-tile *ngFor="let dato of datos">
+      <mat-card class="invento-card">
+        <mat-card-header>
+          <div mat-card-avatar class="invento-header-image"></div>
+          <mat-card-title> {{dato.INV_NOMBRE}} ({{dato.ID}})</mat-card-title>
+          <mat-card-subtitle>Profesional a cargo : {{dato.PROF_NOMBRE}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            <b>Pais</b> : {{dato.PAIS_NOMBRE}} <br>
+            <b>Año</b> : {{dato.ANO}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+</div>
+
+<div *ngIf="menu == 2">
+  <mat-card class="invento-card">
+    <mat-card-header>
+      <div mat-card-avatar class="invento-header-image"></div>
+      <mat-card-title> Nuevo Invento</mat-card-title>
+
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Nombre Invento" [(ngModel)]="newInv.NOMBRE" name="NOMBRE" type="text">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput placeholder="Año" [(ngModel)]="newInv.ANO" name="ANO">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-label>Pais</mat-label>
+        <mat-select [(ngModel)]="newInv.ID_PAIS" name="ID_PAIS">
+          <mat-option *ngFor="let pais of paises" [value]="pais.ID" >
+            {{pais.NOMBRE}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-label>Profesional</mat-label>
+        <mat-select  [(ngModel)]="newInv.ID_PROFESIONAL" name="ID_PROFESIONAL">
+          <mat-option *ngFor="let prof of profs" [value]="prof.ID">
+            {{prof.NOMBRE}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="postInvento()">Guardar</button>
+    </mat-card-actions>
+
+  </mat-card>
+
+</div>
+
+
+<div *ngIf="menu == 3">
+
+  <button mat-button mat-button color="primary" (click)="nuevoInventor()">Nuevo Inventor</button>
+
+  <mat-grid-list cols="3" rowHeight="100px">
+    <mat-grid-tile *ngFor="let dato of datos">
+      <mat-card class="invento-card">
+        <mat-card-header>
+          <div mat-card-avatar class="inventor-header-image"></div>
+          <mat-card-title> {{dato.NOMBRE}} ({{dato.ID}})</mat-card-title>
+          <mat-card-subtitle>Pais: {{dato.PAIS}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+</div>
+
+<div *ngIf="menu == 4">
+  <mat-card class="invento-card">
+    <mat-card-header>
+      <div mat-card-avatar class="inventor-header-image"></div>
+      <mat-card-title> Nuevo Inventor</mat-card-title>
+
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Nombre Inventor" [(ngModel)]="newInvR.NOMBRE" name="NOMBRE" type="text">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-label>Pais</mat-label>
+        <mat-select [(ngModel)]="newInvR.ID_PAIS" name="ID_PAIS">
+          <mat-option *ngFor="let pais of paises" [value]="pais.ID" >
+            {{pais.NOMBRE}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="postInventor()">Guardar</button>
+    </mat-card-actions>
+
+  </mat-card>
+
+</div>
+<div *ngIf="menu == 5">
+
+  <button mat-button mat-button color="primary" (click)="nuevoProfesional()">Nuevo Profesional</button>
+
+  <mat-grid-list cols="3" rowHeight="200px">
+    <mat-grid-tile *ngFor="let dato of profs">
+      <mat-card class="invento-card">
+        <mat-card-header>
+          <div mat-card-avatar class="prof-header-image"></div>
+          <mat-card-title> {{dato.NOMBRE}} ({{dato.ID}})</mat-card-title>
+          <mat-card-subtitle>Fecha Contrato : {{dato.FECHA_CONTRATO}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            <b>Salario</b> : Q{{dato.SALARIO}} <br>
+            <b>Comision</b> : Q{{dato.COMISION}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+</div>
+
+<div *ngIf="menu == 6">
+  <mat-card class="invento-card">
+    <mat-card-header>
+      <div mat-card-avatar class="prof-header-image"></div>
+      <mat-card-title> Nuevo Profesional</mat-card-title>
+
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Nombre Profesional" [(ngModel)]="newProf.NOMBRE" name="NOMBRE" type="text">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput placeholder="Fecha Contrato (DD/MM/YYYY)" [(ngModel)]="newProf.FECHA_CONTRATO" name="FECHA_CONTRATO" type="date">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput placeholder="Salario (Q)" [(ngModel)]="newProf.SALARIO" name="SALARIO" type="number">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput placeholder="Comision (Q)" [(ngModel)]="newProf.COMISION" name="COMISION" type="number">
+      </mat-form-field>
+      <br>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="postProfesional()">Guardar</button>
+    </mat-card-actions>
+
+  </mat-card>
+
+</div>
+
+<div *ngIf="menu == 7">
+
+  <button mat-button mat-button color="primary" (click)="nuevoPais()">Nuevo Pais</button>
+
+  <mat-grid-list cols="3" rowHeight="200px">
+    <mat-grid-tile *ngFor="let dato of paises">
+      <mat-card class="invento-card">
+        <mat-card-header>
+          <div mat-card-avatar class="pais-header-image"></div>
+          <mat-card-title> {{dato.NOMBRE}} ({{dato.ID}})</mat-card-title>
+          <mat-card-subtitle>Capital : {{dato.CAPITAL}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            <b>Poblacion</b> : {{dato.POBLACION}} <br>
+            <b>Area</b> : {{dato.AREA}} km^2 <br>
+            <b>Region</b> : {{dato.REGION}} km^2
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+</div>
+
+<div *ngIf="menu == 9">
+
+  <button mat-button mat-button color="primary" (click)="nuevaRegion()">Nueva Region</button>
+
+  <mat-grid-list cols="3" rowHeight="100px">
+    <mat-grid-tile *ngFor="let dato of regiones">
+      <mat-card class="invento-card">
+        <mat-card-header>
+          <div mat-card-avatar class="pais-header-image"></div>
+          <mat-card-title> {{dato.NOMBRE}} ({{dato.ID_REGION}})</mat-card-title>
+          <mat-card-subtitle>Padre : {{dato.PADRE}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+</div>
+

@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1A8FA549-C73E-0726-FC9A-A858EABE098A" name="PROFESIONAL">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:52:34 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="1FA26DEB-29AB-89A1-25CC-178BFFF99DB9">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:52:40 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="2531F892-6A61-5896-D8BD-529D33A82EBC">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:52:49 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA_CONTRATO" id="BA77289D-F84C-DCBE-DD5C-652F85022A43">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:53:11 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SALARIO" id="B980A102-65A9-9D76-F0C9-AE79CF3B7B8E">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:53:20 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMISION" id="1A3B916D-B389-A526-D893-037CBB46E305">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:53:32 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AREA" id="2B62234F-B105-967E-19D3-3B209205B662">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:15:05 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4FAA1A34-2488-3F39-DB4C-0067BA381D4B" name="PROFESIONAL PK">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 03:52:48 UTC</createdTime>
+<ownerDesignName>ER3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5B2F2C56-A47A-6059-DAF4-A1C6F5A8C8AB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1FA26DEB-29AB-89A1-25CC-178BFFF99DB9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,66 @@
+LOAD DATA INFILE 'C:\\Users\\Alfonso\\Desktop\\BD1\\Proyecto2\\SQL\\CargaP-I.csv'
+    INTO TABLE temp_cargp1
+    CHARACTER SET latin1
+    FIELDS TERMINATED BY ';'
+    OPTIONALLY ENCLOSED BY '"'
+    LINES TERMINATED BY '\n'
+    IGNORE 1 LINES
+    (
+     INVENTO,
+     INVENTOR,
+     PROFESIONAL_ASIGNADO_INVENTO,
+     PROFESIONAL_JEFE_AREA,
+     PROFESIONAL_FECHA_CONTRATO,
+     SALARIO,
+     COMISION,
+     PROFESIONAL_AREA_INVESTIGACION,
+     RANKING,
+     INVENTO_ANIO,
+     INVENTO_PAIS,
+     INVENTOR_PAIS,
+     REGION_PAIS,
+     CAPITAL,
+     POBLACION,
+     AREA_PAIS,
+     FRONTERA_CON,
+     NORTE,
+     SUR,
+     ESTE,
+     @OESTE
+        )
+SET
+    OESTE = TRIM(both char(13) from @OESTE);
+
+
+LOAD DATA INFILE 'C:\\Users\\Alfonso\\Desktop\\BD1\\Proyecto2\\SQL\\CargaP-II.csv'
+    INTO TABLE temp_cargp2
+    CHARACTER SET latin1
+    FIELDS TERMINATED BY ';'
+    OPTIONALLY ENCLOSED BY '"'
+    LINES TERMINATED BY '\n'
+    IGNORE 1 LINES
+    (
+     NOMBRE_ENCUESTA,
+     PREGUNTA,
+     RESPUESTAS_POSIBLES,
+     RESPUESTA_CORRECTA,
+     PAIS,
+     @RESPUESTA_PAIS
+        )
+SET
+    RESPUESTA_PAIS = TRIM(both char(13) from @RESPUESTA_PAIS);
+
+LOAD DATA INFILE 'C:\\Users\\Alfonso\\Desktop\\BD1\\Proyecto2\\SQL\\CargaP-III.csv'
+    INTO TABLE temp_cargp3
+    CHARACTER SET latin1
+    FIELDS TERMINATED BY ';'
+    OPTIONALLY ENCLOSED BY '"'
+    LINES TERMINATED BY '\n'
+    IGNORE 1 LINES
+    (
+        NOMBRE_REGION,
+        @REGION_PADRE
+        )
+    SET
+    REGION_PADRE = IF(@REGION_PADRE = char(13),NULL,TRIM(both char(13) from @REGION_PADRE))
+;

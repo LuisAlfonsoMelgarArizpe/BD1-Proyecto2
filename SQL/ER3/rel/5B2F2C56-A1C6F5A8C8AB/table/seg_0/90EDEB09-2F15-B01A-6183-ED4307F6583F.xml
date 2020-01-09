@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90EDEB09-2F15-B01A-6183-ED4307F6583F" name="INVENTO_INVENTOR">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 04:11:13 UTC</createdTime>
+<generatorID>69153924-E901-E8DF-FF30-4AD0C16D09B4</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INVENTO_ID" id="7B0CB7C6-6525-88E9-D52F-275EE82EF485">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 04:11:13 UTC</createdTime>
+<generatorID>EC86F5A3-2286-C32C-DBB2-20F3D0735B78</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8AE21EA8-643C-ACAA-09E8-371BA1169BFF" referredColumn="74784CF4-4C70-38C7-AEE2-4C79AAC810BF"/>
+</associations>
+</Column>
+<Column name="INVENTOR_ID" id="56816EA1-9D12-CAFC-29B6-00989BA24B86">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 04:11:13 UTC</createdTime>
+<generatorID>A36034D6-C878-FB3D-4F0B-36873A83459B</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF14E8E8-E15B-4D57-0261-F458137BD566" referredColumn="D66BBB66-86EB-4F4F-6D89-4BB1D962235C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="742E4541-8A87-82EA-5DA1-91FF6709B24D" name="INVENTO_INVENTOR_PK">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 04:11:13 UTC</createdTime>
+<generatorID>C648E79F-B455-7866-EAAC-D3169CEE50A5</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56816EA1-9D12-CAFC-29B6-00989BA24B86"/>
+<colUsage columnID="7B0CB7C6-6525-88E9-D52F-275EE82EF485"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58EA212B-83B3-6EF0-F917-8C197F7F4E89" name="INVENTO_INVENTOR_INVENTOR_FK">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:23:59 UTC</createdTime>
+<generatorID>F504D961-F464-3DC1-ED93-3E4B268B1D6F</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56816EA1-9D12-CAFC-29B6-00989BA24B86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6139EB2-71C2-D1E6-D05A-720AB409E51D" name="INVENTO_INVENTOR_INVENTO_FK">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 10:24:02 UTC</createdTime>
+<generatorID>D836C4DD-A197-DE7A-4EF1-E8DC7BD38D9F</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B0CB7C6-6525-88E9-D52F-275EE82EF485"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

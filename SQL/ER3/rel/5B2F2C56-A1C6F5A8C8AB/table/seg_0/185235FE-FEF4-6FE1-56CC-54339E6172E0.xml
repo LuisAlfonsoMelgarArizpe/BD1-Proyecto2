@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="185235FE-FEF4-6FE1-56CC-54339E6172E0" name="CARDINAL">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 04:11:13 UTC</createdTime>
+<generatorID>CADA367B-540B-FC6B-0DFB-E34AF8A0A98F</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B5AD8DE2-E88A-6C14-AB5E-3F6D4EA096C0">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 04:11:13 UTC</createdTime>
+<generatorID>A985B3A7-B55E-7890-CF79-4D43C2634387</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARDINAL" id="67EF107C-F666-3328-DD09-B66862A3BFB6">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 04:11:13 UTC</createdTime>
+<generatorID>975CF2E3-FDF0-6869-54F1-87A05B59803F</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F1683FC-9B98-C980-2FD3-579D1F13FBC9" name="CARDINAL_PK">
+<createdBy>Alfonso</createdBy>
+<createdTime>2020-01-08 04:11:13 UTC</createdTime>
+<generatorID>31FFA838-537D-6773-EDB0-AB819CCF8674</generatorID>
+<ownerDesignName>ER3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5AD8DE2-E88A-6C14-AB5E-3F6D4EA096C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
